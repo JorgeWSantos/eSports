@@ -8,9 +8,9 @@ const app = express();
 app.use(express.json());
 app.use(cors())
 
-// const prisma = new PrismaClient({
-//   log: ['query']
-// });
+const prisma = new PrismaClient({
+  // log: ['query']
+});
 
 app.post('/ads', async (request, response) => {
   
